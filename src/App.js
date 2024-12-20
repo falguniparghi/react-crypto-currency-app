@@ -55,7 +55,7 @@ function App() {
       });
       setCoins(updatedCoins);
     }
-  }, [amount]);
+  }, [amount, coins]);
 
   return (
     <div className="layout-column align-items-center mx-auto">

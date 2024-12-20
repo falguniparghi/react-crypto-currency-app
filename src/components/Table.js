@@ -15,7 +15,7 @@ function Table({ coins, error }) {
         </thead>
         <tbody data-testid="exchange-data">
           {cryptocurrencyList.map((currency) => {
-            const selectedIndex = coins.findIndex((coin) => coin.code == currency.code);
+            const selectedIndex = coins.findIndex((coin) => coin.code === currency.code);
             const number = selectedIndex !== -1 ? coins[selectedIndex].coins : 0;
             
             const formattedNumber = number.toFixed(8);
